@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <h1>Stupid Coaching</h1>
+
+  <!-- Bloc de la question -->
+  <div class="p-3 mb-3 border-start border-4 border-secondary">
+    <p class="mb-1"><%= @question %></p>
+    <p class="text-muted mb-0">-You</p>
+  </div>
+
+  <!-- Bloc de la réponse du coach -->
+  <div class="p-3 mb-3 bg-warning bg-opacity-10 border-start border-4 border-secondary">
+    <p class="mb-1"><%= @answer %></p>
+    <p class="text-muted mb-0">-Your coach</p>
+  </div>
+
+  <!-- Lien de retour -->
+  <p class="mt-4">
+    <%= link_to "Ask a new question", ask_path, class: "text-decoration-none" %>
+  </p>
+</div>
